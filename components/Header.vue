@@ -3,7 +3,7 @@
     <nav class="header-nav pa-3 px-md-6">
       <h1>
         <NuxtLink to="/">
-          <v-img width="80" src="/light_icon.png" :alt="title"> </v-img>
+          <v-img width="80" src="./light_icon.png" :alt="title"> </v-img>
           <strong class="d-sr-only">{{ title }}</strong>
         </NuxtLink>
       </h1>
