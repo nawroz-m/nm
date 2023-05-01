@@ -4,7 +4,7 @@ export default {
   // Deployment on github pag
   target: "static",
   router: {
-    base: "/portfo-v1/",
+    base: "/nm/",
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
