@@ -25,7 +25,7 @@ export default {
           text: "Scroll for more",
           id: "#myskillset",
         },
-        image: { path: "/nawroz_bg-5.png", alt: "Nawroz Mohammadi" },
+        image: { path: "./nawroz_bg-5.png", alt: "Nawroz Mohammadi" },
         about_me:
           "A skilled full-stack developer specializing in creating user-friendly, responsive, and scalable websites that address real-world needs. From simple landing pages to complex web apps, currently, I’m working on a healthcare management system called UmarJi which aims to streamline hospital management and improve patient outcomes.",
       },
@@ -95,7 +95,7 @@ export default {
           },
         ],
         image: {
-          path: "/microscope.png",
+          path: "./microscope.png",
           alt: "Make fun of proccess",
         },
       },
@@ -103,26 +103,26 @@ export default {
         [
           {
             title: "CloudRedux",
-            image: { source: "/CloudRedux.png", path: "/", description: "" },
+            image: { source: "./CloudRedux.png", path: "/", description: "" },
           },
           {
             title: "Tinkertale",
-            image: { source: "/tinkertale.png", path: "/", description: "" },
+            image: { source: "./tinkertale.png", path: "/", description: "" },
           },
           {
             title: "DocXter",
-            image: { source: "/DocXter.png", path: "/", description: "" },
+            image: { source: "./DocXter.png", path: "/", description: "" },
           },
         ],
         [
           {
             title: "Hatke Music ",
-            image: { source: "/Hatke_Music.png", path: "/", description: "" },
+            image: { source: "./Hatke_Music.png", path: "/", description: "" },
           },
           {
             title: "Smart Ship Hub",
             image: {
-              source: "/Smart_Ship_Hub.png",
+              source: "./Smart_Ship_Hub.png",
               path: "/",
               description: "",
             },
@@ -130,7 +130,7 @@ export default {
           {
             title: "Mini Projects",
             image: {
-              source: "/Mini_Projects.png",
+              source: "./Mini_Projects.png",
               path: "/",
               description: "",
             },
