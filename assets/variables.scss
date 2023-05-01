@@ -1,0 +1,62 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$body-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$line-height-root: 1.85;
+$font-size-root: 1.25rem;
+
+$headings: (
+  "h1": (
+    "size": clamp(3.625rem, 2.9375rem + 3.0556vw, 5.6875rem),
+    // 67px,
+    //91px,
+    "weight": 700,
+    "letter-spacing": 0,
+    "line-height": 44px,
+    //44
+  ),
+  "h2": (
+    "size": 51.8px,
+    "weight": 700,
+    "line-height": 44px,
+  ),
+  "h3": (
+    "size": 38px,
+    "weight": 700,
+    "line-height": 44px,
+  ),
+  "h4": (
+    "size": 28px,
+    "weight": 700,
+    "line-height": 20px,
+  ),
+  "h5": (
+    "size": 24px,
+    "weight": 700,
+    "line-height": 10px,
+  ),
+  "h6": (
+    "size": 14px,
+    "weight": 700,
+    "line-height": 20px,
+  ),
+
+  "subtitle-1": (
+    "size": 31.1px,
+    "weight": 700,
+    "line-height": 44px,
+  ),
+
+  "body-1": (
+    "size": 18.2px,
+    "weight": 300,
+    "line-height": 24px,
+  ),
+  "body-2": (
+    "size": 18px,
+    "weight": 300,
+    "line-height": 28px,
+  ),
+);
