@@ -1,5 +1,9 @@
 <template>
-  <section id="myproccess" class="py-md-12 py-6 text-center text-md-start">
+  <section
+    id="myproccess"
+    class="py-md-12 py-6 text-center text-md-start"
+    v-resize="onResize"
+  >
     <!-- <v-img src="/microscope.png" class="align-center"> -->
     <h2 class="text-h2 relative z-index-1">
       {{ data && data.title }}
@@ -8,7 +12,7 @@
 
     <v-img
       v-if="data && data.image"
-      max-width="500"
+      :max-width="windowSize.x > 960 ? 500 : ''"
       :src="data.image.path"
       :alt="data.image.alt"
       class="absolute bg_myproccess_img"
@@ -47,10 +51,23 @@ import gsapPlugin from "../plugins/gsap";
 export default {
   props: ["data"],
   data() {
-    return {};
+    return {
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
+    };
   },
   mounted() {
+    this.onResize();
+
     gsapPlugin.mounted();
+  },
+
+  methods: {
+    onResize() {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
+    },
   },
 };
 </script>

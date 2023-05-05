@@ -25,7 +25,7 @@ export default {
           text: "Scroll for more",
           id: "#myskillset",
         },
-        image: { path: "./nawroz_bg-5.png", alt: "Nawroz Mohammadi" },
+        image: { path: "./nawroz.png", alt: "Nawroz Mohammadi" },
         about_me:
           "A skilled full-stack developer specializing in creating user-friendly, responsive, and scalable websites that address real-world needs. From simple landing pages to complex web apps, currently, I’m working on a healthcare management system called UmarJi which aims to streamline hospital management and improve patient outcomes.",
       },
@@ -103,35 +103,64 @@ export default {
         [
           {
             title: "CloudRedux",
-            image: { source: "./CloudRedux.png", path: "/", description: "" },
+            description:
+              "The official website of CloudRedux click on the image to know more.",
+            image: {
+              source: "./CloudRedux.png",
+              path: "https://cloudredux.com/",
+              description: "",
+            },
+          },
+
+          {
+            title: "DocXter",
+            description:
+              "A smart AI base web app to chat with your document tab to know more.",
+            image: {
+              source: "./DocXter.png",
+              path: "https://docxter.app/",
+              description: "",
+            },
           },
           {
             title: "Tinkertale",
-            image: { source: "./tinkertale.png", path: "/", description: "" },
-          },
-          {
-            title: "DocXter",
-            image: { source: "./DocXter.png", path: "/", description: "" },
+            description:
+              "An admin system for Tinkertale to manage their ecommerce site.",
+            image: {
+              source: "./tinkertale.png",
+              path: "#tinkertale",
+              description: "",
+            },
           },
         ],
         [
           {
             title: "Hatke Music ",
-            image: { source: "./Hatke_Music.png", path: "/", description: "" },
+            description:
+              "An Online platform for the musical friendship jus like Hatke.",
+            image: {
+              source: "./Hatke_Music.png",
+              path: "https://www.youtube.com/channel/UCvT28okAet-3JWOwbcwSMqQ",
+              description: "",
+            },
           },
           {
             title: "Smart Ship Hub",
+            description:
+              "A digital platform for remote fleet management & on demand cloud services.",
             image: {
               source: "./Smart_Ship_Hub.png",
-              path: "/",
+              path: "https://smartshiphub.com/",
               description: "",
             },
           },
           {
             title: "Mini Projects",
+            description:
+              "I have completed some mini projects included public and private tab to learn more about it.",
             image: {
               source: "./Mini_Projects.png",
-              path: "/",
+              path: "https://github.com/nawroz-m",
               description: "",
             },
           },

@@ -39,43 +39,104 @@
           <span class="d-md-flex align-center bg-transparent">
             <span class="col-md-6 pa-0 pr-3">
               <v-hover v-slot="{ hover }">
-                <v-img
-                  :src="projects[0].image.source"
-                  :alt="projects[0].title"
-                  class="align-end rounded-lg pa-0"
+                <a
+                  :href="projects[0].image.path"
+                  target="_blank"
+                  class="text-decoration-none"
                 >
-                  <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
-                    <span class="border-left pr-3"></span>
-                    <h3 class="text-h4">{{ projects[0].title }}</h3>
-                  </span>
-                </v-img>
+                  <v-img
+                    max-width="600"
+                    max-height="500"
+                    min-width="400"
+                    min-height="300"
+                    :src="projects[0].image.source"
+                    :alt="projects[0].title"
+                    class="align-end rounded-lg pa-0"
+                  >
+                    <span
+                      v-if="hover"
+                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
+                    >
+                      <span class="d-flex">
+                        <span class="border-left pr-3"></span>
+                        <h3 class="text-h4">{{ projects[0].title }}</h3>
+                      </span>
+                      <p class="pt-5">{{ projects[0].description }}</p>
+                    </span>
+                  </v-img>
+                </a>
               </v-hover>
             </span>
 
             <v-card height="690" class="col-md-6 overflow-auto bg-transparent">
               <v-hover v-slot="{ hover }">
-                <v-img
-                  :src="projects[1].image.source"
-                  :alt="projects[1].title"
-                  class="align-end rounded-lg pa-0"
+                <a
+                  :href="projects[1].image.path"
+                  target="_blank"
+                  class="text-decoration-none"
                 >
-                  <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
-                    <span class="border-left pr-3"></span>
-                    <h3 class="text-h4">{{ projects[1].title }}</h3>
-                  </span>
-                </v-img>
+                  <!-- width="600"
+                    height="500"
+                   width="400"
+                    height="300"
+                  -->
+                  <v-img
+                    max-width="600"
+                    max-height="500"
+                    min-width="400"
+                    min-height="300"
+                    :src="projects[1].image.source"
+                    :alt="projects[1].title"
+                    class="align-end rounded-lg pa-0"
+                  >
+                    <span
+                      v-if="hover"
+                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
+                    >
+                      <span class="d-flex">
+                        <span class="border-left pr-3"></span>
+                        <h3 class="text-h4">{{ projects[1].title }}</h3>
+                      </span>
+                      <p class="pt-5">{{ projects[1].description }}</p>
+                    </span>
+                    <!-- <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
+                      <span class="border-left pr-3"></span>
+                      <h3 class="text-h4">{{ projects[1].title }}</h3>
+                    </span> -->
+                  </v-img>
+                </a>
               </v-hover>
               <v-hover v-slot="{ hover }">
-                <v-img
-                  :src="projects[2].image.source"
-                  :alt="projects[2].title"
-                  class="align-end rounded-lg pa-0 mt-6"
+                <a
+                  :href="projects[2].image.path"
+                  target="_blank"
+                  class="text-decoration-none"
                 >
-                  <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
-                    <span class="border-left pr-3"></span>
-                    <h3 class="text-h4">{{ projects[2].title }}</h3>
-                  </span>
-                </v-img>
+                  <v-img
+                    max-width="600"
+                    max-height="500"
+                    min-width="400"
+                    min-height="300"
+                    :src="projects[2].image.source"
+                    :alt="projects[2].title"
+                    class="align-end rounded-lg pa-0 mt-6"
+                  >
+                    <span
+                      v-if="hover"
+                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
+                    >
+                      <span class="d-flex">
+                        <span class="border-left pr-3"></span>
+                        <h3 class="text-h4">{{ projects[2].title }}</h3>
+                      </span>
+                      <p class="pt-5">{{ projects[2].description }}</p>
+                    </span>
+                    <!-- <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
+                      <span class="border-left pr-3"></span>
+                      <h3 class="text-h4">{{ projects[2].title }}</h3>
+                    </span> -->
+                  </v-img>
+                </a>
               </v-hover>
             </v-card>
           </span>
@@ -111,20 +172,26 @@
           class="ma-0 pa-0"
         >
           <!-- <NuxtLink  :to="n.path" class="text-decoration-none"> -->
-          <v-img
-            :class="`${key === 0 ? 'ml-0 ma-4' : 'ma-4'} ${
-              key === slider_data.length - 1 ? 'mr-0 ma-4' : 'ma-4'
-            } rounded-lg align-end`"
-            width="clamp(14rem, 10.1429rem + 17.1429vw, 23rem)"
-            height="clamp(17rem, 12.3125rem + 20.8333vw, 27.9375rem)"
-            :src="s_data.image.source"
-            aspect-ratio="1"
+          <a
+            :href="s_data.image.path"
+            target="_blank"
+            class="text-decoration-none"
           >
-            <span class="d-flex pb-9 bg-gradient pl-3">
-              <span class="border-left pr-3"></span>
-              <h3 class="text-h4">{{ s_data.title }}</h3>
-            </span>
-          </v-img>
+            <v-img
+              :class="`${key === 0 ? 'ml-0 ma-4' : 'ma-4'} ${
+                key === slider_data.length - 1 ? 'mr-0 ma-4' : 'ma-4'
+              } rounded-lg align-end`"
+              width="clamp(14rem, 10.1429rem + 17.1429vw, 23rem)"
+              height="clamp(17rem, 12.3125rem + 20.8333vw, 27.9375rem)"
+              :src="s_data.image.source"
+              aspect-ratio="1"
+            >
+              <span class="d-flex pb-9 bg-gradient pl-3">
+                <span class="border-left pr-3"></span>
+                <h3 class="text-h4">{{ s_data.title }}</h3>
+              </span>
+            </v-img>
+          </a>
           <!-- </NuxtLink> -->
         </span>
       </v-slide-group>

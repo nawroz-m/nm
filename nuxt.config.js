@@ -11,16 +11,29 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - nmport",
-    title: "nmport",
+    titleTemplate: "%s - Nawroz Mohammadi",
+    title: "A full-stack developer ",
     htmlAttrs: {
       lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content: " A full-stack developer ",
+      },
       { name: "format-detection", content: "telephone=no" },
+      { name: "og:locale", content: "en_US" },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://nawroz-m.github.io/nm/" },
+      { name: "og:site_name", content: "Developer" },
+      { name: "og:image", content: "/nawroz.png" },
+      {
+        name: "article:publisher",
+        content: "https://www.linkedin.com/in/nwrm/",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },

@@ -2,9 +2,6 @@ body {
   /* font-size: clamp(0.875rem, 0.7143rem + 0.7143vw, 1.25rem); */
   margin: 0;
 }
-/* .background {
-  background-image: url("../../static/background-dark.jpeg");
-} */
 
 .bot-border {
   border-bottom: 1.4px solid #5e99ff;
@@ -35,7 +32,7 @@ body {
 }
 
 .bg-gradient {
-  padding-top: 50%;
+  padding-top: 23%;
   transition: opacity 0.9s ease-in-out;
 
   background: linear-gradient(
