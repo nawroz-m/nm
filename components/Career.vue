@@ -8,7 +8,7 @@
       } `"
     >
       <h2 class="text-h2 text-center">
-        My Career <span class="bluePaiload--text text-subtitle-1">+</span>
+        My Careers <span class="bluePaiload--text text-subtitle-1">+</span>
       </h2>
       <span v-if="windowSize.x > 700" class="bot-border">
         <a
