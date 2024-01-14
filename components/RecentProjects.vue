@@ -24,7 +24,7 @@
         }`"
         :style="`z-index: ${windowSize.x > 960 ? 99 : 0} `"
       >
-        <span class="py-1"> Recent </span>
+        <span class="py-1"> Contributed </span>
         <span class="py-1"
           >Projects <span class="bluePaiload--text text-subtitle-1">+</span>
         </span>
@@ -49,6 +49,7 @@
                     max-height="500"
                     min-width="400"
                     min-height="300"
+                    style="aspect-ratio: 7/4"
                     :src="projects[0].image.source"
                     :alt="projects[0].title"
                     class="align-end rounded-lg pa-0"
@@ -68,23 +69,19 @@
               </v-hover>
             </span>
 
-            <v-card height="690" class="col-md-6 overflow-auto bg-transparent">
+            <v-card height="600" class="col-md-6 overflow-auto bg-transparent">
               <v-hover v-slot="{ hover }">
                 <a
                   :href="projects[1].image.path"
                   target="_blank"
                   class="text-decoration-none"
                 >
-                  <!-- width="600"
-                    height="500"
-                   width="400"
-                    height="300"
-                  -->
                   <v-img
                     max-width="600"
                     max-height="500"
                     min-width="400"
                     min-height="300"
+                    style="aspect-ratio: 7/4"
                     :src="projects[1].image.source"
                     :alt="projects[1].title"
                     class="align-end rounded-lg pa-0"
@@ -99,10 +96,6 @@
                       </span>
                       <p class="pt-5">{{ projects[1].description }}</p>
                     </span>
-                    <!-- <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
-                      <span class="border-left pr-3"></span>
-                      <h3 class="text-h4">{{ projects[1].title }}</h3>
-                    </span> -->
                   </v-img>
                 </a>
               </v-hover>
@@ -117,6 +110,7 @@
                     max-height="500"
                     min-width="400"
                     min-height="300"
+                    style="aspect-ratio: 7/4"
                     :src="projects[2].image.source"
                     :alt="projects[2].title"
                     class="align-end rounded-lg pa-0 mt-6"
@@ -131,28 +125,11 @@
                       </span>
                       <p class="pt-5">{{ projects[2].description }}</p>
                     </span>
-                    <!-- <span v-if="hover" class="d-flex pb-9 bg-gradient pl-3">
-                      <span class="border-left pr-3"></span>
-                      <h3 class="text-h4">{{ projects[2].title }}</h3>
-                    </span> -->
                   </v-img>
                 </a>
               </v-hover>
             </v-card>
           </span>
-          <!-- <span v-else>
-          <v-img
-            :v-for="cell in projects"
-            :key="cell"
-            :src="`/myprojects.jpeg`"
-            class="align-end rounded-lg pa-0"
-          >
-            <span class="d-flex pb-5 bg-gradient pl-3">
-              <span class="border-left pr-3"></span>
-              <h3 class="text-h4">{{ cell }}</h3>
-            </span>
-          </v-img>
-        </span> -->
         </v-window-item>
       </span>
       <v-slide-group

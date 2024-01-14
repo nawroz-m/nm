@@ -102,6 +102,37 @@ export default {
       RecentProjectsData: [
         [
           {
+            title: "V-retail Landing",
+            description: "The landing page of V-retail.",
+            image: {
+              source: "./v-retail-landing.png",
+              path: "https://www.vretail.space/",
+              description: "",
+            },
+          },
+
+          {
+            title: "IIC Lab",
+            description: "The officail website of Ink In Caps.",
+            image: {
+              source: "./iic-lab.png",
+              path: "https://iiclab.com/",
+              description: "",
+            },
+          },
+          {
+            title: "V-retail Product",
+            description: "The V-retail product and it's dashboard",
+            image: {
+              source: "./v-retail-product.png",
+              path: "https://admin-staging.core.vretail.space/",
+              description: "",
+            },
+          },
+        ],
+
+        [
+          {
             title: "CloudRedux",
             description:
               "The official website of CloudRedux click on the image to know more.",
@@ -175,7 +206,12 @@ export default {
         {
           company: "CloudRedux",
           role: "Full-stack developer",
-          date: "Nov 2022 - Present",
+          date: "Nov 2022 - May 2023",
+        },
+        {
+          company: "Ink In Caps",
+          role: "Software Development Engineer",
+          date: "Oct 2023 - Present",
         },
       ],
       about: {

@@ -12,7 +12,7 @@
       </h2>
       <span v-if="windowSize.x > 700" class="bot-border">
         <a
-          href="https://drive.google.com/file/d/1PF3woMOrf6S9v5Tx-0DwTWz8-xeYuyEj/view?usp=sharing"
+          href="https://drive.google.com/file/d/164UByk45_HLo9RiPh7PeTbLArhnd-p6u/view?usp=sharing"
           target="_blank"
           class="text-decoration-none"
         >
@@ -26,7 +26,7 @@
       <v-card
         v-for="(positions, key) in data"
         :key="key"
-        :class="`bg-transparent pa-0 col-md-6 col-12 my-4`"
+        :class="`bg-transparent pa-0 col-md-4 col-12 my-4`"
         flat
         elevation="0"
       >
@@ -43,7 +43,7 @@
     </div>
     <span v-if="windowSize.x <= 700" class="bot-border py-3">
       <a
-        href="https://drive.google.com/file/d/1PF3woMOrf6S9v5Tx-0DwTWz8-xeYuyEj/view?usp=sharing"
+        href="https://drive.google.com/file/d/164UByk45_HLo9RiPh7PeTbLArhnd-p6u/view?usp=sharing"
         target="_blank"
         class="text-decoration-none"
       >
