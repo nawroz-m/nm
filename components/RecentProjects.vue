@@ -24,7 +24,7 @@
         }`"
         :style="`z-index: ${windowSize.x > 960 ? 99 : 0} `"
       >
-        <span class="py-1"> Contributed </span>
+        <!-- <span class="py-1"> Contributed </span> -->
         <span class="py-1"
           >Projects <span class="bluePaiload--text text-subtitle-1">+</span>
         </span>

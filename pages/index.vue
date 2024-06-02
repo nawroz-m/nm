@@ -102,6 +102,35 @@ export default {
       RecentProjectsData: [
         [
           {
+            title: "AI Data Vault",
+            description: "AI-powered sales conversation insights",
+            image: {
+              source: "./AI-Data-Vault.png",
+              path: "https://admin-test.data-vault.vretail.space/",
+              description: "",
+            },
+          },
+          {
+            title: "Link",
+            description: "A Unified Platform Management for Ink In Caps.",
+            image: {
+              source: "./link.png",
+              path: "https://link.iiclab.com/",
+              description: "",
+            },
+          },
+          {
+            title: "V-retail Product",
+            description: "The V-retail product and it's dashboard",
+            image: {
+              source: "./v-retail-product.png",
+              path: "https://admin-staging.core.vretail.space/",
+              description: "",
+            },
+          },
+        ],
+        [
+          {
             title: "V-retail Landing",
             description: "The landing page of V-retail.",
             image: {
@@ -134,8 +163,7 @@ export default {
         [
           {
             title: "CloudRedux",
-            description:
-              "The official website of CloudRedux click on the image to know more.",
+            description: "The official website of CloudRedux.",
             image: {
               source: "./CloudRedux.png",
               path: "https://cloudredux.com/",
@@ -145,8 +173,7 @@ export default {
 
           {
             title: "DocXter",
-            description:
-              "A smart AI base web app to chat with your document tab to know more.",
+            description: "A smart AI base web app to chat with your document.",
             image: {
               source: "./DocXter.png",
               path: "https://docxter.app/",
