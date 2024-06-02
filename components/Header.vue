@@ -16,7 +16,6 @@
   position: fixed;
   top: 0px;
   z-index: 200;
-  //   overflow: hidden;
   width: 100%;
   height: 100px;
   background-image: -webkit-gradient(
