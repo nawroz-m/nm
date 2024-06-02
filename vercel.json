@@ -5,10 +5,5 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder"
     }
-  ],
-  "routes": [
-    {
-      "src": "nm/(.*)"
-    }
   ]
 }

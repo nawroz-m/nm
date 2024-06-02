@@ -4,7 +4,7 @@ export default {
   // Deployment on github pag
   target: "static",
   router: {
-    base: "/nm/",
+    base: "/",
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
