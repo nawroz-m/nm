@@ -12,7 +12,7 @@
       </h2>
       <span v-if="windowSize.x > 700" class="bot-border">
         <a
-          href="https://drive.google.com/file/d/1pC9mwHN8iB8Nyq_C_6RH9dJk9_3OwNMm/view?usp=sharing"
+          href="https://drive.google.com/file/d/1XO-GKLSbsGpLY6WeqdgehITGrvqkB-Ig/view?usp=sharing"
           target="_blank"
           class="text-decoration-none"
         >
@@ -43,7 +43,7 @@
     </div>
     <span v-if="windowSize.x <= 700" class="bot-border py-3">
       <a
-        href="https://drive.google.com/file/d/1pC9mwHN8iB8Nyq_C_6RH9dJk9_3OwNMm/view?usp=sharing"
+        href="https://drive.google.com/file/d/1XO-GKLSbsGpLY6WeqdgehITGrvqkB-Ig/view?usp=sharing"
         target="_blank"
         class="text-decoration-none"
       >
