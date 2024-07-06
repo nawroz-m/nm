@@ -12,7 +12,7 @@
       </h2>
       <span v-if="windowSize.x > 700" class="bot-border">
         <a
-          href="https://drive.google.com/file/d/1XO-GKLSbsGpLY6WeqdgehITGrvqkB-Ig/view?usp=sharing"
+          href="https://drive.google.com/file/d/1mjZxN_gSvba3AGwo-6IKd3U9GRX0GkT4/view?usp=sharing"
           target="_blank"
           class="text-decoration-none"
         >

@@ -110,15 +110,17 @@ export default {
               description: "",
             },
           },
+
           {
-            title: "Link",
-            description: "A Unified Platform Management for Ink In Caps.",
+            title: "V-retail Landing",
+            description: "The landing page of V-retail.",
             image: {
-              source: "./link.png",
-              path: "https://link.iiclab.com/",
+              source: "./v-retail-landing.png",
+              path: "https://www.vretail.space/",
               description: "",
             },
           },
+
           {
             title: "V-retail Product",
             description: "The V-retail product and it's dashboard",
@@ -131,16 +133,6 @@ export default {
         ],
         [
           {
-            title: "V-retail Landing",
-            description: "The landing page of V-retail.",
-            image: {
-              source: "./v-retail-landing.png",
-              path: "https://www.vretail.space/",
-              description: "",
-            },
-          },
-
-          {
             title: "IIC Lab",
             description: "The officail website of Ink In Caps.",
             image: {
@@ -149,12 +141,22 @@ export default {
               description: "",
             },
           },
+
           {
-            title: "V-retail Product",
-            description: "The V-retail product and it's dashboard",
+            title: "DocXter",
+            description: "A smart AI base web app to chat with your document.",
             image: {
-              source: "./v-retail-product.png",
-              path: "https://admin-staging.core.vretail.space/",
+              source: "./DocXter.png",
+              path: "https://docxter.app/",
+              description: "",
+            },
+          },
+          {
+            title: "Link",
+            description: "A Unified Platform Management for Ink In Caps.",
+            image: {
+              source: "./link.png",
+              path: "https://link.iiclab.com/",
               description: "",
             },
           },
@@ -172,14 +174,15 @@ export default {
           },
 
           {
-            title: "DocXter",
-            description: "A smart AI base web app to chat with your document.",
+            title: "V-retail Product",
+            description: "The V-retail product and it's dashboard",
             image: {
-              source: "./DocXter.png",
-              path: "https://docxter.app/",
+              source: "./v-retail-product.png",
+              path: "https://admin-staging.core.vretail.space/",
               description: "",
             },
           },
+
           {
             title: "Tinkertale",
             description:
@@ -226,15 +229,11 @@ export default {
       ],
       CareerData: [
         {
-          company: "Gesstell Technologies",
+          company: "Laatulakki Oy",
           role: "Full-stack developer",
-          date: "Nov 2021 - Jun 2022",
+          date: "Aug 2021 - Oct 2023",
         },
-        {
-          company: "CloudRedux",
-          role: "Full-stack developer",
-          date: "Nov 2022 - May 2023",
-        },
+
         {
           company: "Ink In Caps",
           role: "Software Development Engineer",
