@@ -1,5 +1,5 @@
 <template>
-  <section class="py-md-12 py-6 projects_slider" v-resize="onResize">
+  <section id="p" class="py-md-12 py-6 projects_slider" v-resize="onResize">
     <v-window show-arrows>
       <template v-slot:prev="{ on, attrs }">
         <v-icon

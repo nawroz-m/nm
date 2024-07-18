@@ -22,8 +22,8 @@ export default {
         name: "Nawroz",
         button: {
           type: "scroll",
-          text: "Scroll for more",
-          id: "#myskillset",
+          text: "Scroll to the projects",
+          id: "#p",
         },
         image: { path: "./nawroz.png", alt: "Nawroz Mohammadi" },
         about_me:
