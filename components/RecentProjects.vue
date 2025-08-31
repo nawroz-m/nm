@@ -1,6 +1,6 @@
 <template>
   <section id="p" class="projects-section py-16">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-md-4 px-0">
       <!-- Section Header -->
       <div class="section-header text-center mb-16">
         <h2 class="section-title mb-4">
@@ -331,7 +331,7 @@ export default {
 
 @media (max-width: 480px) {
   .projects-section {
-    padding: 2rem 0.5rem;
+    padding: 0rem;
   }
 
   .section-header {

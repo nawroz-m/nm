@@ -261,7 +261,7 @@ export default {
         subtitle: "Lets work together.",
         email: "nawroz.mohammadi.officiao@gmail.com",
         paragraph:
-          "If you're looking for a full-stack developer to work on your project or need advice on your tech stack, feel free to reach out to me at <a class=text-decoration-none  href=mailto:nawroz.mohammadi.official@gmail.com>nawroz.mohammadi.official@gmail.com</a>. I'm currently available for any web application or software development projects. <br><br>Whether you need a custom API, a complex database architecture, or a modern front-end interface, I have the skills and experience to deliver high-quality results.",
+          "If you're looking for a full-stack developer to work on your project or need advice on your tech stack, feel free to reach out to me at <a class=email-link  href=mailto:nawroz.mohammadi.official@gmail.com>nawroz.mohammadi.official@gmail.com</a> <a class=email-here  href=mailto:nawroz.mohammadi.official@gmail.com>here</a>. I'm currently available for any web application or software development projects. <br><br>Whether you need a custom API, a complex database architecture, or a modern front-end interface, I have the skills and experience to deliver high-quality results.",
       },
     };
   },

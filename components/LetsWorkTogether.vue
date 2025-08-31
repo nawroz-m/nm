@@ -1,6 +1,6 @@
 <template>
   <section id="" class="text-center py-md-12 py-6 d-flex justify-center">
-    <span class="col-md-9">
+    <span class="col-md-9 px-0">
       <span class="">
         <h2 class="text-uppercase text-h6 bluePaiload--text">
           {{ data && data.title }}
@@ -37,3 +37,21 @@ export default {
   },
 };
 </script>
+<style>
+.email-link {
+  color: #5e99ff;
+  text-decoration: none;
+  display: inline-block;
+}
+.email-here {
+  display: none;
+}
+@media (max-width: 768px) {
+  .email-link {
+    display: none;
+  }
+  .email-here {
+    display: inline-block;
+  }
+}
+</style>
