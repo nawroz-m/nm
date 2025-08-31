@@ -87,132 +87,166 @@ export default {
         },
       },
       RecentProjectsData: [
-        [
-          {
-            title: "AI Data Vault",
-            description: "AI-powered sales conversation insights",
-            image: {
-              source: "./AI-Data-Vault.png",
-              path: "https://admin-test.data-vault.vretail.space/",
-              description: "",
-            },
+        {
+          title: "Muamelat & It's Dashboard",
+          description:
+            "A specialized LegalTech module offered by New Mind. Designed for the seamless management of complex, multi-stage legal and financial transactions that leverages AI and NLP.",
+          image: {
+            source: "./muamelat_main_page.png",
+            path: "https://www.mecellem.com/en/products/muamelat",
+            description: "",
           },
+        },
 
-          {
-            title: "V-retail Landing",
-            description: "The landing page of V-retail.",
-            image: {
-              source: "./v-retail-landing.png",
-              path: "https://www.vretail.space/",
-              description: "",
-            },
+        {
+          title: "AI Data Vault",
+          description: "AI-powered sales conversation insights",
+          image: {
+            source: "./AI-Data-Vault.png",
+            path: "https://admin-live.data-vault.vretail.space/",
+            description: "",
           },
+        },
+        {
+          title: "V-retail Landing",
+          description: "The landing page of V-retail.",
+          image: {
+            source: "./v-retail-landing.png",
+            path: "https://www.vretail.space/",
+            description: "",
+          },
+        },
+        {
+          title: "Mukavela Dashboard",
+          description:
+            "Sophisticated, AI-driven Contract Lifecycle Management (CLM) system designed to transform traditional, static legal contracts into dynamic and actionable workflows.",
+          image: {
+            source: "./mukavele_main_page.png",
+            path: "https://www.mecellem.com/en/products/mukavele",
+            description: "",
+          },
+        },
 
-          {
-            title: "V-retail Product",
-            description: "The V-retail product and it's dashboard",
-            image: {
-              source: "./v-retail-product.png",
-              path: "https://admin-staging.core.vretail.space/",
-              description: "",
-            },
+        {
+          title: "V-retail Product",
+          description: "The V-retail product and it's dashboard",
+          image: {
+            source: "./v-retail-product.png",
+            path: "https://admin-staging.core.vretail.space/",
+            description: "",
           },
-        ],
-        [
-          {
-            title: "IIC Lab",
-            description: "The officail website of Ink In Caps.",
-            image: {
-              source: "./iic-lab.png",
-              path: "https://iiclab.com/",
-              description: "",
-            },
-          },
+        },
 
-          {
-            title: "DocXter",
-            description: "A smart AI base web app to chat with your document.",
-            image: {
-              source: "./DocXter.png",
-              path: "https://docxter.app/",
-              description: "",
-            },
+        {
+          title: "IIC Lab",
+          description: "The officail website of Ink In Caps.",
+          image: {
+            source: "./iic-lab.png",
+            path: "https://iiclab.com/",
+            description: "",
           },
-          {
-            title: "Link",
-            description: "A Unified Platform Management for Ink In Caps.",
-            image: {
-              source: "./link.png",
-              path: "https://link.iiclab.com/",
-              description: "",
-            },
-          },
-        ],
+        },
 
-        [
-          {
-            title: "CloudRedux",
-            description: "The official website of CloudRedux.",
-            image: {
-              source: "./CloudRedux.png",
-              path: "https://cloudredux.com/",
-              description: "",
-            },
+        {
+          title: "DocXter",
+          description: "A smart AI base web app to chat with your document.",
+          image: {
+            source: "./DocXter.png",
+            path: "https://docxter.app/",
+            description: "",
           },
+        },
+        {
+          title: "Mecellem Addin",
+          description:
+            "A word add-in for Muamelat and Mahfuz document editor using React.js",
+          image: {
+            source: "./Mecellem-addin.png",
+            path: "https://www.mecellem.com/en/products/mukavele",
+            description: "",
+          },
+        },
+        {
+          title: "Link",
+          description: "A Unified Platform Management for Ink In Caps.",
+          image: {
+            source: "./link.png",
+            path: "https://link.iiclab.com/",
+            description: "",
+          },
+        },
 
-          {
-            title: "V-retail Product",
-            description: "The V-retail product and it's dashboard",
-            image: {
-              source: "./v-retail-product.png",
-              path: "https://admin-staging.core.vretail.space/",
-              description: "",
-            },
+        {
+          title: "CloudRedux",
+          description: "The official website of CloudRedux.",
+          image: {
+            source: "./CloudRedux.png",
+            path: "https://cloudredux.com/",
+            description: "",
           },
+        },
 
-          {
-            title: "Tinkertale",
-            description:
-              "An admin system for Tinkertale to manage their ecommerce site.",
-            image: {
-              source: "./tinkertale.png",
-              path: "#tinkertale",
-              description: "",
-            },
+        {
+          title: "Mecellem Pusula",
+          description: "A legal contract fields.",
+          image: {
+            source: "./Mecelem-Pusula.png",
+            path: "https://pusula.mecellem.com/",
+            description: "",
           },
-        ],
-        [
-          {
-            title: "Hatke Music ",
-            description:
-              "An Online platform for the musical friendship jus like Hatke.",
-            image: {
-              source: "./Hatke_Music.png",
-              path: "https://www.youtube.com/channel/UCvT28okAet-3JWOwbcwSMqQ",
-              description: "",
-            },
+        },
+
+        {
+          title: "V-retail Product",
+          description: "The V-retail product and it's dashboard",
+          image: {
+            source: "./v-retail-product.png",
+            path: "https://admin-staging.core.vretail.space/",
+            description: "",
           },
-          {
-            title: "Smart Ship Hub",
-            description:
-              "A digital platform for remote fleet management & on demand cloud services.",
-            image: {
-              source: "./Smart_Ship_Hub.png",
-              path: "https://smartshiphub.com/",
-              description: "",
-            },
+        },
+
+        {
+          title: "Tinkertale",
+          description:
+            "An admin system for Tinkertale to manage their ecommerce site.",
+          image: {
+            source: "./tinkertale.png",
+            path: "#tinkertale",
+            description: "",
           },
-          {
-            title: "Mini Projects",
-            description:
-              "I have completed some mini projects included public and private tab to learn more about it.",
-            image: {
-              source: "./Mini_Projects.png",
-              path: "https://github.com/nawroz-m",
-              description: "",
-            },
+        },
+
+        {
+          title: "Hatke Music ",
+          description:
+            "An Online platform for the musical friendship jus like Hatke.",
+          image: {
+            source: "./Hatke_Music.png",
+            path: "https://www.youtube.com/channel/UCvT28okAet-3JWOwbcwSMqQ",
+            description: "",
           },
-        ],
+        },
+        {
+          title: "Smart Ship Hub",
+          description:
+            "A digital platform for remote fleet management & on demand cloud services.",
+          image: {
+            source: "./Smart_Ship_Hub.png",
+            path: "https://smartshiphub.com/",
+            description: "",
+          },
+        },
+        {
+          title: "Mini Projects",
+          description:
+            "I have completed some mini projects included public and private tab to learn more about it.",
+          image: {
+            source: "./Mini_Projects.png",
+            path: "https://github.com/nawroz-m",
+            description: "",
+          },
+        },
       ],
       CareerData: [
         {
@@ -235,9 +269,9 @@ export default {
       letsWorkTogether: {
         title: "What is next",
         subtitle: "Lets work together.",
-        email: "nawroz678@gmail.com",
+        email: "nawroz.mohammadi.officiao@gmail.com",
         paragraph:
-          "If you're looking for a full-stack developer to work on your project or need advice on your tech stack, feel free to reach out to me at <a class=text-decoration-none  href=mailto:nawroz678@gmail.com>nawroz678@gmail.com</a>. I'm currently available for any web application or software development projects. <br><br>Whether you need a custom API, a complex database architecture, or a modern front-end interface, I have the skills and experience to deliver high-quality results.",
+          "If you're looking for a full-stack developer to work on your project or need advice on your tech stack, feel free to reach out to me at <a class=text-decoration-none  href=mailto:nawroz.mohammadi.official@gmail.com>nawroz.mohammadi.official@gmail.com</a>. I'm currently available for any web application or software development projects. <br><br>Whether you need a custom API, a complex database architecture, or a modern front-end interface, I have the skills and experience to deliver high-quality results.",
       },
     };
   },

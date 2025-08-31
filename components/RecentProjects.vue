@@ -1,262 +1,386 @@
 <template>
-  <section id="p" class="py-md-12 py-6 projects_slider" v-resize="onResize">
-    <v-window show-arrows>
-      <template v-slot:prev="{ on, attrs }">
-        <v-icon
-          v-bind="attrs"
-          v-on="on"
-          class="pa-8 rounded-circle bg-transparent border arrow-left"
-          >mdi-chevron-left</v-icon
-        >
-      </template>
-      <template v-slot:next="{ on, attrs }">
-        <v-icon
-          v-bind="attrs"
-          v-on="on"
-          class="pa-8 rounded-circle bg-transparent border arrow-right"
-          >mdi-chevron-right</v-icon
-        >
-      </template>
+  <section id="p" class="projects-section py-16">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="section-header text-center mb-16">
+        <h2 class="section-title mb-4">
+          Projects
+          <span class="accent-text">+</span>
+        </h2>
+        <p class="section-subtitle">
+          A showcase of my work delivering innovative solutions across various
+          industries
+        </p>
+      </div>
 
-      <h2
-        :class="`text-h2 d-flex flex-column text-md-start text-center  ${
-          windowSize.x > 960 ? 'absolute' : ''
-        }`"
-        :style="`z-index: ${windowSize.x > 960 ? 99 : 0} `"
-      >
-        <!-- <span class="py-1"> Contributed </span> -->
-        <span class="py-1"
-          >Projects <span class="bluePaiload--text text-subtitle-1">+</span>
-        </span>
-      </h2>
-      <span v-if="windowSize.x > 960">
-        <v-window-item
-          :v-if="data"
-          v-for="(projects, key) in data"
-          :key="key"
-          :class="`${windowSize.x > 960 ? '' : 'py-10'}`"
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <div
+          v-for="(projectGroup, groupIndex) in data"
+          :key="groupIndex"
+          class="project-group"
         >
-          <span class="d-md-flex align-center bg-transparent">
-            <span class="col-md-6 pa-0 pr-3">
-              <v-hover v-slot="{ hover }">
-                <a
-                  :href="projects[0].image.path"
-                  target="_blank"
-                  class="text-decoration-none"
-                >
-                  <v-img
-                    max-width="600"
-                    max-height="500"
-                    min-width="400"
-                    min-height="300"
-                    style="aspect-ratio: 7/4"
-                    :src="projects[0].image.source"
-                    :alt="projects[0].title"
-                    class="align-end rounded-lg pa-0"
-                  >
-                    <span
-                      v-if="hover"
-                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
-                    >
-                      <span class="d-flex">
-                        <span class="border-left pr-3"></span>
-                        <h3 class="text-h4">{{ projects[0].title }}</h3>
-                      </span>
-                      <p class="pt-5">{{ projects[0].description }}</p>
-                    </span>
-                  </v-img>
-                </a>
-              </v-hover>
-            </span>
-
-            <v-card height="600" class="col-md-6 overflow-auto bg-transparent">
-              <v-hover v-slot="{ hover }">
-                <a
-                  :href="projects[1].image.path"
-                  target="_blank"
-                  class="text-decoration-none"
-                >
-                  <v-img
-                    max-width="600"
-                    max-height="500"
-                    min-width="400"
-                    min-height="300"
-                    style="aspect-ratio: 7/4"
-                    :src="projects[1].image.source"
-                    :alt="projects[1].title"
-                    class="align-end rounded-lg pa-0"
-                  >
-                    <span
-                      v-if="hover"
-                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
-                    >
-                      <span class="d-flex">
-                        <span class="border-left pr-3"></span>
-                        <h3 class="text-h4">{{ projects[1].title }}</h3>
-                      </span>
-                      <p class="pt-5">{{ projects[1].description }}</p>
-                    </span>
-                  </v-img>
-                </a>
-              </v-hover>
-              <v-hover v-slot="{ hover }">
-                <a
-                  :href="projects[2].image.path"
-                  target="_blank"
-                  class="text-decoration-none"
-                >
-                  <v-img
-                    max-width="600"
-                    max-height="500"
-                    min-width="400"
-                    min-height="300"
-                    style="aspect-ratio: 7/4"
-                    :src="projects[2].image.source"
-                    :alt="projects[2].title"
-                    class="align-end rounded-lg pa-0 mt-6"
-                  >
-                    <span
-                      v-if="hover"
-                      class="d-flex pb-0 bg-gradient pl-3 flex-column"
-                    >
-                      <span class="d-flex">
-                        <span class="border-left pr-3"></span>
-                        <h3 class="text-h4">{{ projects[2].title }}</h3>
-                      </span>
-                      <p class="pt-5">{{ projects[2].description }}</p>
-                    </span>
-                  </v-img>
-                </a>
-              </v-hover>
-            </v-card>
-          </span>
-        </v-window-item>
-      </span>
-      <v-slide-group
-        v-else
-        v-model="model"
-        class="pa-0 ma-0 slider-w-arrows"
-        center-active
-        show-arrows
-        prev-icon="mdi-chevron-left"
-        next-icon="mdi-chevron-right"
-      >
-        <span
-          flat
-          elevation="0"
-          v-for="(s_data, key) in slider_data"
-          :key="key"
-          class="ma-0 pa-0"
-        >
-          <!-- <NuxtLink  :to="n.path" class="text-decoration-none"> -->
-          <a
-            :href="s_data.image.path"
-            target="_blank"
-            class="text-decoration-none"
-          >
-            <v-img
-              :class="`${key === 0 ? 'ml-0 ma-4' : 'ma-4'} ${
-                key === slider_data.length - 1 ? 'mr-0 ma-4' : 'ma-4'
-              } rounded-lg align-end`"
-              width="clamp(14rem, 10.1429rem + 17.1429vw, 23rem)"
-              height="clamp(17rem, 12.3125rem + 20.8333vw, 27.9375rem)"
-              :src="s_data.image.source"
-              aspect-ratio="1"
+          <!-- <div class="projects-row"> -->
+          <div class="project-card">
+            <a
+              :href="projectGroup.image.path"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
             >
-              <span class="d-flex pb-9 bg-gradient pl-3">
-                <span class="border-left pr-3"></span>
-                <h3 class="text-h4">{{ s_data.title }}</h3>
-              </span>
-            </v-img>
-          </a>
-          <!-- </NuxtLink> -->
-        </span>
-      </v-slide-group>
-    </v-window>
+              <div class="project-image-container">
+                <img
+                  :src="projectGroup.image.source"
+                  :alt="projectGroup.title"
+                  class="project-image"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <h3 class="project-title">{{ projectGroup.title }}</h3>
+                    <p class="project-description">
+                      {{ projectGroup.description }}
+                    </p>
+                    <div class="project-cta">
+                      <span class="view-project">View Project</span>
+                      <v-icon class="arrow-icon">mdi-arrow-right</v-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-section text-center mt-16">
+        <p class="cta-text mb-4">
+          Interested in working together? Let's discuss your next project.
+        </p>
+        <a href="mailto:nawroz.mohammadi.official@gmail.com" class="cta-button">
+          Get In Touch
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
-<style lang="scss">
-.projects_slider {
-  .v-slide-group__prev {
-    position: absolute;
-    z-index: 4;
-    border-radius: 50%;
-    padding: 15px;
-
-    border: 1.4px solid #5e99ff;
-    top: 38%;
-    opacity: 0.9;
-  }
-  .v-slide-group__next {
-    right: 0px;
-    position: absolute;
-    z-index: 4;
-    border-radius: 50%;
-    padding: 15px;
-
-    border: 1.4px solid #5e99ff;
-    top: 38%;
-    opacity: 0.9;
-  }
-
-  .theme--dark.v-icon.v-icon.v-icon--disabled {
-    color: a39d9d !important;
-  }
-
-  .v-slide-group__next {
-    position: absolute;
-    right: 0px;
-  }
-  .slide-enter-active,
-  .slide-leave-active {
-    transition: transform 0.5s ease;
-  }
-  .slide-enter-to,
-  .slide-leave {
-    transform: translateX(50%);
-  }
-  .slide-enter,
-  .slide-leave-to {
-    transform: translateX(-50%);
-  }
-  .v-icon.v-icon::after {
-    background-color: transparent !important;
-  }
-}
-</style>
-
 <script>
 export default {
+  name: "RecentProjects",
   props: ["data"],
   data() {
     return {
-      model: null,
-
-      windowSize: {
-        x: 0,
-        y: 0,
-      },
-      slider_data: [],
+      // Component data if needed
     };
-  },
-  mounted() {
-    this.onResize();
-    if (this.data) {
-      this.data.map((n_data) => {
-        if (n_data.length > 1) {
-          for (let i = 0; i < n_data.length; i++) {
-            this.slider_data.push(n_data[i]);
-          }
-        }
-      });
-    }
-  },
-
-  methods: {
-    onResize() {
-      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
-    },
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.projects-section {
+  // background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -7.1rem;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.1;
+    pointer-events: none;
+    width: 100vw;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  .accent-text {
+    color: #5e99ff;
+    font-weight: 800;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #8e9aaa;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-group {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.projects-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.95) 0%,
+    rgba(30, 41, 59, 0.85) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 2rem;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay-content {
+  text-align: center;
+  color: #ffffff;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+  opacity: 0.9;
+}
+
+.project-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #5e99ff;
+
+  .view-project {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .arrow-icon {
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+  }
+}
+
+.project-card:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.cta-section {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  color: #475569;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #5e99ff 0%, #4f7cff 100%);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(94, 153, 255, 0.3);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(94, 153, 255, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .projects-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .project-overlay {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+  .projects-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
+  .section-title {
+    color: #f1f5f9;
+  }
+
+  .section-subtitle {
+    color: #94a3b8;
+  }
+
+  .project-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+  }
+
+  .cta-section {
+    background: #1e293b;
+    border: 1px solid #334155;
+  }
+
+  .cta-text {
+    color: #cbd5e1;
+  }
+}
+</style>
