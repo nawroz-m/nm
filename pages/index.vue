@@ -2,11 +2,9 @@
   <v-row justify="center" align="center" class="my-16">
     <v-col cols="12" sm="8" md="12" xl="6">
       <Hero :hero="hero" />
-      <MySkillSet :mySkillset="mySkillset" />
       <MyProccess :data="MyProcessData" />
       <RecentProjects :data="RecentProjectsData" />
       <Career :data="CareerData" />
-      <MySkillSet :mySkillset="about" />
       <CaseStudies :data="caseStudyData" />
       <LetsWorkTogether :data="letsWorkTogether" />
     </v-col>
@@ -27,18 +25,7 @@ export default {
         },
         image: { path: "./nawroz.png", alt: "Nawroz Mohammadi" },
         about_me:
-          "A skilled full-stack developer specializing in creating user-friendly, responsive, and scalable websites that address real-world needs. From simple landing pages to complex web apps, currently, I’m working on a healthcare management system called UmarJi which aims to streamline hospital management and improve patient outcomes.",
-      },
-      mySkillset: {
-        title: "My Skillset",
-        subtitle: "Frontend & <br>  backend developer.",
-        button: {
-          type: "scroll",
-          text: "My proccess",
-          id: "#myproccess",
-        },
-        paragraph:
-          "A full stack developer with a passion for creating complex web applications that deliver exceptional user experiences. I specialize in building visually appealing web applications that seamlessly integrate front-end and back-end functionality.<br> I have had the opportunity to work with a diverse range of clients from various industries, allowing me to understand the unique challenges each project presents, and I am always excited to collaborate on new and exciting projects. Whether it's developing custom dashboards or innovative landing pages, I am dedicated to delivering high-quality products that meet and exceed client expectations.",
+          "A skilled full-stack developer specializing in creating user-friendly, responsive, and scalable websites that address real-world needs. From simple landing pages to complex web apps.",
       },
 
       MyProcessData: {
@@ -233,41 +220,18 @@ export default {
           role: "Full-stack developer",
           date: "Aug 2021 - Oct 2023",
         },
-
         {
           company: "Ink In Caps",
           role: "Software Development Engineer",
-          date: "Oct 2023 - Present",
-        },
-      ],
-      about: {
-        title: "About me",
-        subtitle: "Frontend & <br> backend beveloper.",
-        button: {
-          type: "link",
-          text: "Let's connect on LinkedIn",
-          link: "https://www.linkedin.com/in/nwrm/",
-          icon: "linkedin",
-        },
-        paragraph:
-          "I have a strong passion for developing web applications and efficient projects, and I never stop learning about new technologies to enhance my skills.<br><br> In my free time, I enjoy playing casual sports like bowling or volleyball with my friends. I feel fortunate to have a job that offers the flexibility to work from anywhere. You can find me on LinkedIn, where I share my projects and experiences.<br><br> I believe in the power of networking and enjoy connecting with others in my field to learn from and collaborate with.",
-      },
-      caseStudyData: [
-        {
-          title: "Node.js ",
-          image: {
-            source: "/myprojects.jpeg",
-            path: "/",
-          },
+          date: "Oct 2023 - Dec 2024",
         },
         {
-          title: "Node.js ",
-          image: {
-            source: "/myprojects.jpeg",
-            path: "/",
-          },
+          company: "Next Smart Move",
+          role: "Frontend Developer",
+          date: "Dec 2024 - Present",
         },
       ],
+
       letsWorkTogether: {
         title: "What is next",
         subtitle: "Lets work together.",
