@@ -9,7 +9,7 @@
       </span>
 
       <p
-        class="text-body-1 graySkill--text justify-center gs_reveal"
+        class="text-body-3 graySkill--text justify-center gs_reveal"
         v-html="data && data.paragraph"
       ></p>
       <span class="bot-border">

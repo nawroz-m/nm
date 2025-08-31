@@ -12,12 +12,12 @@
       </h2>
       <span v-if="windowSize.x > 700" class="bot-border">
         <a
-          href="https://drive.google.com/file/d/1mjZxN_gSvba3AGwo-6IKd3U9GRX0GkT4/view?usp=sharing"
+          href="https://www.linkedin.com/in/nwrm/"
           target="_blank"
           class="text-decoration-none"
         >
           <span class="px-3 text-uppercase white--text text-body-2">
-            Get Cv <v-icon class="pl-8">mdi-file-account-outline</v-icon>
+            Let's connect <v-icon class="pl-8">mdi-linkedin</v-icon>
           </span>
         </a>
       </span>
@@ -43,12 +43,12 @@
     </div>
     <span v-if="windowSize.x <= 700" class="bot-border py-3">
       <a
-        href="https://drive.google.com/file/d/1XO-GKLSbsGpLY6WeqdgehITGrvqkB-Ig/view?usp=sharing"
+        :href="`https://www.linkedin.com/in/nwrm/`"
         target="_blank"
         class="text-decoration-none"
       >
         <span class="px-3 text-uppercase white--text text-body-2">
-          Get Cv <v-icon class="pl-8">mdi-file-account-outline</v-icon>
+          Let's connect <v-icon class="pl-8">mdi-linkedin</v-icon>
         </span>
       </a>
     </span>

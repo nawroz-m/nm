@@ -197,16 +197,6 @@ export default {
         },
 
         {
-          title: "V-retail Product",
-          description: "The V-retail product and it's dashboard",
-          image: {
-            source: "./v-retail-product.png",
-            path: "https://admin-staging.core.vretail.space/",
-            description: "",
-          },
-        },
-
-        {
           title: "Tinkertale",
           description:
             "An admin system for Tinkertale to manage their ecommerce site.",
